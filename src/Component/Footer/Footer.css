@@ -1,0 +1,35 @@
+.footer {
+    background-color: #1d1f27;
+    color: white;
+    margin-top: 100px;
+}
+.footer-img-logo {
+    width: 27%;
+    height:62px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.reset-post small{
+    font-size: 13px;
+    color: #85858b;
+}
+.reset-post p {
+    font-weight: 600;
+    cursor: pointer;
+}
+.footer-service p{
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.copy-right {
+    text-align: center;
+    background-color: #2e3037;
+    padding: 20px;
+}
+
+.copy-right p {
+    margin: 0;
+    font-size: 14px;
+}

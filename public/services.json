@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "title": "For your child whitest teeths",
+        "name": "DENTIST",
+        "logo": "<i class='fas fa-tooth'></i>",
+        "description": "A dentist, also known as a dental surgeon, is a medical professional who specializes in dentistry, the diagnosis, prevention, and treatment of diseases and conditions of the oral cavity.",
+        "img": "https://bit.ly/3vqSmmO"
+    },
+    {
+        "id": 2,
+        "title": "Got a broken heart?",
+        "name": "CARDIOLOGIST",
+        "logo": "<i class='fas fa-heartbeat'></i>",
+        "description": "Cardiology is a branch of medicine that deals with the disorders of the heart as well as some parts of the circulatory system.",
+        "img": "https://bit.ly/3aObGks"
+    },
+    {
+        "id": 3,
+        "name": "CHIROPRACTOR",
+        "title": "Neck or back pain?",
+        "logo": "<i class='fas fa-hiking'></i>",
+        "description": "Chiropractic is a pseudoscientific alternative medicine that is concerned with the diagnosis and treatment of mechanical disorders of the musculoskeletal system, especially the spine.",
+        "img": "https://bit.ly/3n7tHzE"
+    },
+    {
+        "id": 4,
+        "name": "PEDIATRICIAN",
+        "title": "Oral problems?",
+        "logo": "<i class='fas fa-torah'></i>",
+        "description": "A pediatrician is a medical doctor who manages the physical, behavioral, and mental care for children from birth until age 18.",
+        "img": "https://bit.ly/3B4xcfv"
+    },
+    {
+        "id": 5,
+        "name": "MEDICAL ADVICES",
+        "title": "We give you?",
+        "logo": "<i class='fas fa-hospital-user'></i>",
+        "description": "Medical advice is the provision of a formal professional opinion regarding what a specific individual should or should not do to restore or preserve health.",
+        "img": "https://bit.ly/30Edjzh"
+    },
+    {
+        "id": 6,
+        "name": "Beautify your smile",
+        "title": "TEETH WHITENING",
+        "logo": "<i class='fas fa-teeth'></i>",
+        "description": "Tooth whitening or tooth bleaching is the process of lightening the color of human teeth. Whitening is often desirable when teeth become yellowed over time for a number of reasons, and can be achieved by changing the intrinsic or extrinsic color of the tooth enamel.",
+        "img": "https://bit.ly/3jfnyQR"
+    },
+    {
+        "id": 7,
+        "name": "PEDIATRICIAN",
+        "title": "Children medical care",
+        "logo": "<i class='fas fa-hand-holding-medical'></i>",
+        "description": "Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains.",
+        "img": "https://bit.ly/3lSwcXj"
+    },
+    {
+        "id": 8,
+        "name": "IMPLANTS",
+        "title": "If you lost yours",
+        "logo": "<i class='far fa-grimace'></i>",
+        "description": "Dental implants are replacement tooth roots made of titanium. Implants provide a strong foundation for fixed (permanent) or removable replacement teeth that are made to match your natural teeth.",
+        "img": "https://bit.ly/3jg6Ocf"
+    }
+]
