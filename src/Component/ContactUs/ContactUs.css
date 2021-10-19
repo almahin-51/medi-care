@@ -1,0 +1,19 @@
+.contact-sub-title{
+    position: relative;
+}
+.contact-sub-title::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -5px;;
+    left: 0;
+    width: 62px;
+    height: 2px;
+    background-color: aqua;
+}
+
+.contact-icons i {
+    font-size: 35px;
+    color: aqua;
+    padding: 0 20px;
+}
