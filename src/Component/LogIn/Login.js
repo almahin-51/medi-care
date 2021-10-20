@@ -71,16 +71,19 @@ const Login = () => {
                     <div className="login-logo mx-auto">
                         <i class="fas fa-user-alt"></i>
                     </div>
+
+                    <h2 className="fw-bolder text-center mt-4">Log In</h2>
+
                     <Form onSubmit={handleSignInUsingEmail} className="login-from mx-auto mt-5">
                         <Form.Group className="mb-3" controlId="formHorizontalEmail">
                             <Col>
-                                <Form.Control onBlur={getEmail} type="email" placeholder="Email" />
+                                <Form.Control onBlur={getEmail} type="email" required placeholder="Email" />
                             </Col>
                         </Form.Group>
 
                         <Form.Group className="mb-3" controlId="formHorizontalPassword">
                             <Col>
-                                <Form.Control onBlur={getPassword} type="password" placeholder="Password" />
+                                <Form.Control onBlur={getPassword} required type="password" placeholder="Password" />
                             </Col>
                         </Form.Group>
                         <small className="text-danger">{error} </small>
