@@ -18,3 +18,19 @@
 .forget {
     cursor: pointer;
 }
+
+.sign-logo {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 425px) {
+    .login-from {
+        width: 90%;
+    }
+    .login-banner {
+        display: none;
+    }
+    .header-top {
+        position: relative !important;
+    }
+}

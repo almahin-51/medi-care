@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import logIn from '../images/login.jpg';
 import { useHistory, useLocation } from 'react-router';
+import Fade from 'react-reveal/Fade';
 
 const SignUp = () => {
     const {
@@ -41,44 +42,48 @@ const SignUp = () => {
     }
 
     return (
-        <div className="mx-4 my-5">
-            <Row xs={1} md={2} className="g-4">
-                <Col>
-                    <img className="img-fluid" src={logIn} alt="" />
+        <div className="mx-4 my-5 pt-5">
+            <Row xs={1} md={2} className="g-4 py-5">
+                <Col className="login-banner">
+                    <Fade left>
+                        <img className="img-fluid" src={logIn} alt="" />
+                    </Fade>
                 </Col>
                 <Col>
-                    <div className="login-logo mx-auto">
-                        <i className="fas fa-user-alt"></i>
-                    </div>
+                    <Fade right>
+                        <div className="login-logo mx-auto">
+                            <i className="fas fa-user-alt"></i>
+                        </div>
 
-                    <h2 className="fw-bolder text-center mt-4">Sign In</h2>
+                        <h2 className="fw-bolder text-center mt-4">Sign In</h2>
 
-                    <Form onSubmit={handleSignUp} className="login-from mx-auto mt-5">
-                        <Form.Group className="mb-3" controlId="formGriName">
-                            <Form.Control required onBlur={getName} placeholder="Full Name" />
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="formHorizontalEmail">
-                            <Col>
-                                <Form.Control required onBlur={getEmail} type="email" placeholder="Email" />
-                            </Col>
-                        </Form.Group>
+                        <Form onSubmit={handleSignUp} className="login-from mx-auto mt-5">
+                            <Form.Group className="mb-3" controlId="formGriName">
+                                <Form.Control required onBlur={getName} placeholder="Full Name" />
+                            </Form.Group>
+                            <Form.Group className="mb-3" controlId="formHorizontalEmail">
+                                <Col>
+                                    <Form.Control required onBlur={getEmail} type="email" placeholder="Email" />
+                                </Col>
+                            </Form.Group>
 
-                        <Form.Group className="mb-3" controlId="formHorizontalPassword">
-                            <Col>
-                                <Form.Control required onBlur={getPassword} type="password" placeholder="Password" />
-                            </Col>
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="formGridAddress1">
-                            <Form.Control placeholder="Address" />
-                        </Form.Group>
-                        <Form.Group as={Row} className="mb-3">
-                            <Col className="text-center">
-                                <p className="text-danger text-center">{error}</p>
-                                <Link to="/login" className="text-primary my-2 d-block">Already have an account?</Link>
-                                <Button type="submit" className="w-100 btn-info rounded-0">Sign Up</Button>
-                            </Col>
-                        </Form.Group>
-                    </Form>
+                            <Form.Group className="mb-3" controlId="formHorizontalPassword">
+                                <Col>
+                                    <Form.Control required onBlur={getPassword} type="password" placeholder="Password" />
+                                </Col>
+                            </Form.Group>
+                            <Form.Group className="mb-3" controlId="formGridAddress1">
+                                <Form.Control placeholder="Address" />
+                            </Form.Group>
+                            <Form.Group as={Row} className="mb-3">
+                                <Col className="text-center">
+                                    <p className="text-danger text-center">{error}</p>
+                                    <Link to="/login" className="text-primary my-2 d-block">Already have an account?</Link>
+                                    <Button type="submit" className="w-100 card-btn fw-bold rounded-0">Sign Up</Button>
+                                </Col>
+                            </Form.Group>
+                        </Form>
+                    </Fade>
                 </Col>
             </Row>
         </div>

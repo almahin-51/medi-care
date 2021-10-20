@@ -1,0 +1,11 @@
+.header-top{
+    position: absolute !important;
+    width: 100%;
+    background: linear-gradient(#0000005d, #8c8c8c18);
+}
+.nav-link a{
+    color: white
+    ;
+    font-size: 18px;
+    font-weight: 600;
+}

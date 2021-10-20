@@ -6,9 +6,9 @@ import './NotFound.css';
 
 const NotFound = () => {
     return (
-        <div>
+        <div className="notFound">
             <img className="img-fluid" src={notfound} alt="" />
-            <Link to="/home"><Button variant="info" className="fw-bold notFound-btn">Back to Home</Button></Link>
+            <Link to="/home"><Button className="fw-bold notFound-btn">Back to Home</Button></Link>
         </div>
     );
 };

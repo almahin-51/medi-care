@@ -1,0 +1,12 @@
+.about-section {
+    background-image: url(https://bit.ly/3m0pzT0);
+    position: relative;
+    z-index: 1;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

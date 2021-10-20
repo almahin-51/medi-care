@@ -1,29 +1,45 @@
 import React from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
+import './Navbar.css';
 
 const Navbars = () => {
     const { user, logOut} = useAuth();
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg">
+            <Navbar collapseOnSelect expand="md"  variant="dark" className="header-top" sticky="top">
                 <Container>
                     <Navbar.Brand href="/home"><img src="https://bit.ly/2YXM4ib" alt="" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
                         </Nav>
-                        <Nav>
-                            <Nav.Link as={Link} to="/home">Home</Nav.Link>
-                            <Nav.Link as={Link} to="/service">Services</Nav.Link>
-                            <Nav.Link as={Link} to="/contact">Contact us</Nav.Link>
+                        <Nav className="nav-link">
+                            <Nav.Link as={NavLink} activeStyle={{
+                                fontWeight: "bold",
+                                color: "#0cb8b6"
+                            }} to="/home">Home</Nav.Link>
+                            <Nav.Link as={NavLink} activeStyle={{
+                                fontWeight: "bold",
+                                color: "#0cb8b6"
+                            }} to="/about">About Us</Nav.Link>
+                            <Nav.Link as={NavLink} activeStyle={{
+                                fontWeight: "bold",
+                                color: "#0cb8b6"
+                            }} to="/contact">Contact us</Nav.Link>
 
                             {user?.displayName || user?.email ?
                                 <Nav.Link onClick={logOut}>Log Out</Nav.Link>:
-                                <Nav.Link as={Link} to="/login">Log In</Nav.Link>}
+                                <Nav.Link as={NavLink} activeStyle={{
+                                    fontWeight: "bold",
+                                    color: "#0cb8b6"
+                                }} to="/login">Log In</Nav.Link>}
                             
-                            {!user.displayName && <Nav.Link as={Link} to="/signup">Sign Up</Nav.Link>}
+                            {!user.displayName && <Nav.Link activeStyle={{
+                                fontWeight: "bold",
+                                color: "#0cb8b6"
+                            }} as={NavLink} to="/signup">Sign Up</Nav.Link>}
                         </Nav>
                         <Navbar.Text>
                             {user?.displayName}

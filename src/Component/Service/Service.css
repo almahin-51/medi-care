@@ -1,3 +1,21 @@
 .cards {
     height: 100%;
 }
+.card-btn{
+    background-color: #12c5c3 !important;
+    border-color: #12c5c3 !important;
+}
+
+.card-btn:hover {
+    background-color: white !important;
+    color: #12c5c3 !important;
+    border-color: #12c5c3 !important;
+}
+
+.medi-card {
+    transition: all .3s;
+}
+
+.medi-card:hover {
+    transform: scale(1.01);
+}

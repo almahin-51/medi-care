@@ -1,5 +1,12 @@
 .notFound-btn {
     position: absolute;
-    top: 14%;
+    bottom: 5%;
     left: 45%;
+}
+.notFound {
+    position: relative;
+}
+.notFound-btn {
+    background-color: #12c5c3 !important;
+    border-color: transparent !important;
 }
