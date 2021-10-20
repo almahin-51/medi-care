@@ -29,8 +29,8 @@ const About = () => {
                     <Row xs={1} md={2} lg={3}>
                         <Fade left>
                             <Col>
-                                <div>
-                                    <div>
+                                <div className="d-flex">
+                                    <div className="me-2">
                                         <img src={one} alt="" />
                                     </div>
                                     <div>
@@ -40,8 +40,8 @@ const About = () => {
                                 </div>
                             </Col>
                             <Col>
-                                <div>
-                                    <div>
+                                <div className="d-flex">
+                                    <div className="me-2">
                                         <img src={two} alt="" />
                                     </div>
                                     <div>
@@ -53,8 +53,8 @@ const About = () => {
                         </Fade>
                         <Fade bottom>
                             <Col>
-                                <div>
-                                    <div>
+                                <div className="d-flex">
+                                    <div className="me-2">
                                         <img src={three} alt="" />
                                     </div>
                                     <div>
@@ -64,8 +64,8 @@ const About = () => {
                                 </div>
                             </Col>
                             <Col>
-                                <div>
-                                    <div>
+                                <div className="d-flex">
+                                    <div className="me-2">
                                         <img src={four} alt="" />
                                     </div>
                                     <div>
@@ -77,8 +77,8 @@ const About = () => {
                         </Fade>
                         <Fade right>
                             <Col>
-                                <div>
-                                    <div>
+                                <div className="d-flex">
+                                    <div className="me-2">
                                         <img src={five} alt="" />
                                     </div>
                                     <div>
@@ -88,8 +88,8 @@ const About = () => {
                                 </div>
                             </Col>
                             <Col>
-                                <div>
-                                    <div>
+                                <div className="d-flex">
+                                    <div className="me-2">
                                         <img src={six} alt="" />
                                     </div>
                                     <div>
