@@ -43,6 +43,7 @@ const Login = () => {
                 setUser(result.user)
                 history.push(redirect_uri)
                 alert('successfuly loged in')
+                setError('');
             })
             .catch(error => {
                 setError(error.message)
@@ -54,8 +55,9 @@ const Login = () => {
         e.preventDefault()
         handleSignIn()
             .then(() => {
-                history.push(redirect_uri)
-                alert('successfuly loged in')
+                history.push(redirect_uri);
+                alert('successfuly loged in');
+                setError('');
             })
             .catch(error => {
                 setError(error.message)

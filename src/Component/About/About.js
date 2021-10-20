@@ -30,7 +30,7 @@ const About = () => {
                         <Fade left>
                             <Col>
                                 <div className="d-flex">
-                                    <div className="me-2">
+                                    <div>
                                         <img src={one} alt="" />
                                     </div>
                                     <div>
